@@ -20,9 +20,9 @@ public class ClassRectangleArea {
         double area1 = width1 * length1;
         double area2 = width2 * length2;
 
-        if (area1>area2)
+        if (area1 > area2)
             System.out.println("The Area of the Rectangle1 is greater than Area of the Rectangle 2");
-        else if (area1<area2)
+        else if (area1 < area2)
             System.out.println("The Area of the Rectangle2 is greater than Area of the Rectangle 1");
         else
             System.out.println("The Area of the Rectangles are equal");
