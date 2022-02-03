@@ -13,9 +13,9 @@ public class ClassFloatingPointNumber {
         else if (number < 0) System.out.println("Output: number is negative");
         else System.out.println("Output: number is positive");
 
-        if (Math.abs(number)<1)
+        if (Math.abs(number) < 1)
             System.out.println("Output: number is small");
-        else  if (Math.abs(number)>1000000) System.out.println("Output: number is large");
+        else if (Math.abs(number) > 1000000) System.out.println("Output: number is large");
         else System.out.println("Output: number between[1,1000000]");
     }
 }
