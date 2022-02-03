@@ -8,7 +8,7 @@ public class ClassOddOrEven {
 
         Scanner ObjNumber = new Scanner(System.in);
 
-        Integer number = ObjNumber.nextInt();
+        int number = ObjNumber.nextInt();
         if (number % 2 == 0)
             System.out.println("number: " + number + " is Odd");
         else System.out.println("number: " + number + " is Even");
