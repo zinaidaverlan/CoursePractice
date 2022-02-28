@@ -15,21 +15,24 @@ public class PrimeNumber {
         this.number = number;
     }
 
-    public static boolean testPrimeNum(int nr) {
+    public static boolean testPrimeNum(int number) {
         int n = 0;// numara divizorii proprii
         // variabila d reprezinta divizorii nr
-        for (int d = 2; d <= nr / 2; d++) {
-            if (nr % d == 0) n++;
+        for (int d = 2; d <= number / 2; d++) {
+            if (number % d == 0) n++;
         }
         if (n == 0) return true;
         else return false;
     }
 
     public static void main(String[] args) {
-        PrimeNumber number1= new PrimeNumber(5);
-        if (testPrimeNum(5) )System.out.println("numarul "+number1+" este prim");
+        PrimeNumber number1 = new PrimeNumber(5);
+        PrimeNumber number2 = new PrimeNumber(7);
+
+
+       // if (number1.testPrimeNum()) System.out.println("numarul " + number1 + " este prim");
         //apelam metoda pentru un sir de numere 1 la 1000
-        for (int i = 1, j = 1; i <= 1000; i++) {
+        for (int i= 1, j = 1; i <= 1000; i++) {
             if (testPrimeNum(i)) {
                 if (j % 30 != 0) {
                     // variabila j se utilizeaza pentru afisarea cite 30 de numere prime pe linie
@@ -37,11 +40,12 @@ public class PrimeNumber {
                     System.out.print(i + " ");
                 } else {
                     System.out.println(i + " ");
+                     }
+                    j++;
                 }
-                j++;
             }
-        }
 
+        }
     }
-}
+
 
