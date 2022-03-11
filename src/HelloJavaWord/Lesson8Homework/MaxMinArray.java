@@ -1,22 +1,21 @@
 package HelloJavaWord.Lesson8Homework;
 
-import java.util.Scanner;
-
 public class MaxMinArray {
     public static int maxArrayOneDim(int n) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Input size of array:");
-        n = s.nextInt();
-        int[] array = new int[100];
-        System.out.println("Input array:");
+        int[] returnedArray = InputArray.inputArrayOneDim(n);
+        int max = returnedArray[0];
         for (int i = 0; i < n; i++) {
-            array[i] = s.nextInt();
-        }
-        int max = array[0];
-        for (int i = 0; i < n; i++) {
-            if (array[i]>max) max = array[i];
+            if (returnedArray[i] > max) max = returnedArray[i];
         }
         return max;
+    }
+    public static int minArrayOneDim(int n) {
+        int[] returnedArray = InputArray.inputArrayOneDim(n);
+        int min = returnedArray[0];
+        for (int i = 0; i < n; i++) {
+            if (returnedArray[i] > min) min = returnedArray[i];
+        }
+        return min;
 
     }
 }

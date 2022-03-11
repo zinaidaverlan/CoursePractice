@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class InputArray {
 
-    public static void inputArrayOneDim(int n) {
+    public static int[] inputArrayOneDim(int n) {
         Scanner s = new Scanner(System.in);
         System.out.println("Input size of array:");
         n = s.nextInt();
@@ -14,10 +14,10 @@ public class InputArray {
             array[i] = s.nextInt();
         }
         System.out.println("Element of array:");
-        for (int i = 0; i < n;i++){
-            System.out.print(array[i]+"  ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + "  ");
         }
-
+        return array;
     }
 
 }

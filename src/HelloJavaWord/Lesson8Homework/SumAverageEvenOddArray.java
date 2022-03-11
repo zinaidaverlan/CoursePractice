@@ -4,40 +4,35 @@ import java.util.Scanner;
 
 public class SumAverageEvenOddArray {
     public static int sumArrayOneDim(int n) {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Input size of array:");
-        n = s.nextInt();
-        int[] array = new int[100];
-        System.out.println("Input array:");
+
+        int[] returnedArray = InputArray.inputArrayOneDim(n);
+        int sum = 0;
         for (int i = 0; i < n; i++) {
-            array[i] = s.nextInt();
-        }
-          int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += array[i];
+            sum += returnedArray[i];
         }
         return sum;
-
     }
-    public static double averageArrayOneDim(int n){
-        double avg=sumArrayOneDim(n)/n;
+
+    public static double averageArrayOneDim(int n) {
+        double avg = sumArrayOneDim(n) / n;
         return avg;
     }
-    public static int numEvenArrayOneDim(int n){
-        Scanner s = new Scanner(System.in);
-        System.out.println("Input size of array:");
-        n = s.nextInt();
-        int[] array = new int[100];
-        System.out.println("Input array:");
-        for (int i = 0; i < n; i++) {
-            array[i] = s.nextInt();
-        }
 
+    public static int numEvenArrayOneDim(int n) {
+        int[] returnedArray = InputArray.inputArrayOneDim(n);
         int nrEven = 0;
         for (int i = 0; i < n; i++) {
-            if  ( array[i] % 2==0)   nrEven+=1;
+            if (returnedArray[i] % 2 == 0) nrEven += 1;
         }
         return nrEven;
+    }
+    public static int numOddArrayOneDim(int n) {
+        int[] returnedArray = InputArray.inputArrayOneDim(n);
+        int nrOdd = 0;
+        for (int i = 0; i < n; i++) {
+            if (returnedArray[i] % 2 == 1) nrOdd += 1;
+        }
+        return nrOdd;
     }
 
 }
