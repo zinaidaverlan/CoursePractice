@@ -1,4 +1,4 @@
-package PrincipleInterhance;
+package principles.oop.PrincipleInterhance.Person;
 
 public class MainInterhanceTest {
     public static void main(String [] args){

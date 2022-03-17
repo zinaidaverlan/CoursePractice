@@ -1,4 +1,4 @@
-package PrincipleInterhance;
+package principles.oop.PrincipleInterhance.Person;
 
 public class Student extends Person {
     private String program;

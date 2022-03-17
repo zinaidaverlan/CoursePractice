@@ -1,6 +1,6 @@
-package PrincipleInterhance;
+package principles.oop.PrincipleInterhance.Person;
 
-public class Staff extends Person{
+public class Staff extends Person {
     private String school;
     private double pay;
 
