@@ -1,28 +1,16 @@
-/*package lambda.expresion;
+package lambda.expresion;
 
 import java.util.Comparator;
 
 public class Product {
-    private String name;
-    private int price;
+    int id;
+    String name;
+    float price;
 
-    private static int compare(Object p1, Object p2) {
-        return p1.getPrice() - p2.getPrice();
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Product(int id, String name, float price) {
+        super();
+        this.id = id;
         this.name = name;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -33,11 +21,4 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
-    public void printProduct(){
-        System.out.println(this.toString());
-    }
-
-    public  Comparator
-    ascendingPrise = Product::compare;
 }
-*/
